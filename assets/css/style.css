@@ -1,63 +1,71 @@
 
 body {
     box-sizing: border-box;
-    margin: 0px;
-    position: static;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-image: url('../images/shl.png');
     color: #777777;
 }
 
-header {
-    border-bottom: 2px solid #cccccc;
-    background: #ffffff;
-    height: 60px;
+
+/*erase from here to... */
+/*all the way down to here... */
+
+#masthead {
+    background: #fff;
+    margin: 0px;
+    z-index: 99;
+    color: #fff;
+    overflow: auto;
+    border-bottom: 2px solid #ccc;
+    position: fixed;
+    width: 100%;
 }
 
-.header {
-    font-family:'Georgia', Times, Times New Roman, serif;
-    border-bottom: 2px solid #cccccc;
-    background: #ffffff;
-    width: 960px;
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: table;
+    }
+
+
+.container {
+    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
-    height: 60px;
+    clear: both;
 }
 
 
-.name {
-    padding: 16.5px 10px;
-    color: white;
-    background-color: #4aaaa5;
+#logo {
+    width: 250px;
+    height: 90px;
+    background: #4aaaa5;
     float: left;
-    font-size:27px;
-    font-weight: bold;
-    text-align: center;
-    font-family:'Georgia', Times, Times New Roman, serif;
-}
-
-
-.nav {
-    float: right;
-    margin-right: 20px;
-    padding-top: 21px;
-    padding-bottom: 25px;
-    width: 220px;
-}
-
-.nav-element {
-    display: inline;
-      
-}
-
-.nav-link {
-    padding: none;
-    display: inline;
-    text-decoration: none;
-    padding: 4px;
-    color: #95898b;
-    background: #ffffff;
     font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
 }
+nav {
+    float: right;
+    margin-top: 25px;
+}
+nav a {
+    color: #999;
+    text-decoration: none;
+    margin-left: 15px;
+    display: inline-block;
+    border-left: 1px solid #efefef;
+    padding-left: 15px;
+    line-height: 18px;
+}
+nav a:first-child {
+    border-left: 0 none;
+}
+
 
 
 .buzz {
@@ -72,10 +80,10 @@ header {
 .content {
     float: left;
     max-width: 650px;
-    border: 2px solid #dddddd;
+    border: 1px solid #dddddd;
     overflow: hidden;
     background: white;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .container-2 {
@@ -98,15 +106,17 @@ header {
     width: 200px;
     height: auto;
     margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 5px;
     float: left;
-    margin-right: 25px;
+    
 }
 
 .para {
     color: #95898b;
     line-height: 30px;
     padding-left: 5px;
-    padding-top: 18px;
+    padding-top: 5px;
     font-size: 15px;
 }
 
@@ -118,7 +128,7 @@ header {
     padding: 0px;
     height: 160px;
     background: #fff;
-    border: 2px solid #dddddd;
+    border: 1px solid #dddddd;
     text-align: center;
     display: inline-block;
 }
@@ -209,6 +219,7 @@ label {
     border: 0 none;
     opacity: .8;
 }
+
 .pic-a h3 {
     border-bottom: 0;
     background: #4aaaa5;
@@ -233,6 +244,7 @@ footer {
     font-size: 10px;
     color: #ffffff;
     border-top: 5px solid #4aaaa5;
+    margin-top: 10px;
 
 }
 
@@ -252,32 +264,43 @@ footer {
     }
 
     .header {
-        width: 100%;
-        margin-left: 20px;
+        width: 730px;
+
     }
-    
+
+    .clearfix:after {
+        clear: both;
+        content: " ";
+        display: table;
+    }
+
+    .name {
+        padding: 16.5px 20px;
+    }
+
+    /*Why does margin 0 auto not work here... 
+    Why is all that stuff crossed out*/
     .buzz {
-        width: 100%;
-        float: left;
-        display: inline;
+        width: 730px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 30px;
     }
+
     .container-2 {
         width: 100%;
-        max-width: 300px;
+        max-width: 380px;
         margin-left: 20px;
     }
 
     .first-pic { 
-        margin-bottom: 15px;
-        width: 300px;
+        margin: 10px;
+        width: 360px;
         height: auto;
-        margin-top: 5px;
-        margin-right: 25px;
     }
 
     .content {
-        margin-left: 20px;
-        max-width: 340px;
+        max-width: 420px;
         width: 100%;
     }
 
@@ -287,25 +310,29 @@ footer {
     .para {
         clear: both;
         float: none;
-        padding: 0px;
+        padding-top: 10px;
     }
 
     .nav {
-        position: absolute;
-        padding-left: 440px;
+        float: right;
 
     }
 
     .side {
         width: 270px;
-        float: left;
+        float: right;
         height: 160px;
-        margin: 0px 20px 30px 30px;
+        margin: 0px 0px 30px 0px;
     }
 
     .pic-a {
         display: block;
-        margin: 0px 32px 30px 32px;
+        margin: 0px 30px 30px 30px;
+        width: 360px;
+    }
+
+    .pic-a h3 {
+        width: 360px;
     }
 }
 
@@ -319,69 +346,78 @@ footer {
     }
 
     .header {
-        margin-left: 20px;
-        width:100%;
+        width: 730px;
+    }
+    .name {
+        padding: 16.5px 20px;
     }
 
     .nav {
-        max-width: 580px; 
-        position: absolute;
-        margin-left: 15px;
+        float: right;
 
     }
 
     .buzz {
-        width: 100%;
-        float: left;
+        width: 730px;
+        margin: 0 auto;
         display: block;
+        margin-top: 30px;
     }
 
     .content {
         width: 100%;
-        max-width: 655px;
+        max-width: 730px;
     }
 
     .container-2 {
         width: 100%;
-        max-width: 615px;
+        max-width: 690px;
         margin-left: 20px;
     }
     
     .center {
-        position: relative;
+        padding: 20px 25px;
     }
 
     .first-pic { 
         width: 300px;
         height: auto;
-        padding-bottom: 10px;
-        margin-left: 157px;
+        padding: 0px 25px 0px 0px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .para {
+        clear: none;
+        padding: 5px 5px 0px 0px;
     }
 
     .pic-a {
-    width: 274px;
+    width: 315px;
     overflow: auto;
     position: relative;
     float: left;
     margin: 25px;
     }
 
+    .pic-a h3 {
+        width: 315px;
+    }
+
     .side {
-        width: 655px;
+        width: 730px;
         float: left;
         height: 160px;
-        margin: 0px 0px 30px 20px;
+        margin: 0px 0px 30px 0px;
     }
     .side-title {
     font-weight: bold;
-    width: 605px;
+    width: 685px;
     border-bottom: 1px solid #cecece;
     font-family:'Georgia', Times, Times New Roman, serif;
     margin-bottom: 0px;
     margin-top: 20px;
     margin-left: 25px;
     padding-bottom: 18px;
-    font-size: 20px;
     color: #4aaaa5;
     text-align: left;
 }
@@ -405,26 +441,30 @@ footer {
     margin-left: 2.25px;
 }    
 
+    textarea {
+        width: 100%;
+        max-width: 680px;
+    }
+
 @media screen and (max-width: 640px) {
     body {
         width: 100%;
     }
     header {
         width: 100%;
-        max-width: 340px;
     }
 
     .header {
-        width: 100%;
+        width: 640px;
         margin-left: 0px;
-        max-width: 200px;
-    }    
+    }
+
     .name {
-        width: 340px;
+        width: 640px;
         text-align: center;
     }
     .buzz {
-        width: 100%;
+        max-width: 600px;
         float: left;
         display: inline;
     }
@@ -443,8 +483,8 @@ footer {
 
 
     .content {
-        margin-left: 20px;
-        max-width: 340px;
+        margin-left: 0px;
+        max-width: 600px;
         width: 100%;
     }
 
@@ -458,11 +498,10 @@ footer {
     }
 
     .nav {
-        position: fixed;
+        float: left;
         width: 220px;
-        margin: 65px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
         padding: 0px;
-        display: block;
     }
 
     .nav-element {
