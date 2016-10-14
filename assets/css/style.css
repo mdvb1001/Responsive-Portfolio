@@ -187,7 +187,8 @@ input[type=submit] {
 
 textarea {
     width: 100%;
-    max-width: 642px;
+    max-width: 600px;
+    height: 200px;
     padding: 12px 20px;
     margin: 12px 0;
     box-sizing: border-box;
@@ -328,6 +329,11 @@ footer {
 
     .pic-a h3 {
         width: 360px;
+    }
+
+    textarea {
+        max-width: 400px;
+        width: 100%;
     }
 }
 
