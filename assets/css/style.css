@@ -285,8 +285,8 @@ footer {
 
     .container-2 {
         width: 100%;
-        max-width: 380px;
-        margin-left: 20px;
+        max-width: 360px;
+        margin-left: 30px;
     }
 
     .first-pic { 
@@ -306,7 +306,7 @@ footer {
     .para {
         clear: both;
         float: none;
-        padding-top: 10px;
+        padding: 10px 10px 0px 10px;
     }
 
     .nav {
