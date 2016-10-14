@@ -51,7 +51,7 @@ body {
 }
 nav {
     float: right;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 nav a {
     color: #999;
@@ -67,13 +67,12 @@ nav a:first-child {
 }
 
 
-
 .buzz {
     width: 960px;
     background: #ffffff;
     margin: 0 auto;
     background: none;
-    margin-top: 30px;
+    padding-top: 120px;
 }
 
 
@@ -259,11 +258,11 @@ footer {
     body {
         width: 100%;
     }
-    header {
+    .masthead {
         width: 100%;
     }
 
-    .header {
+    .container {
         width: 730px;
 
     }
@@ -274,17 +273,13 @@ footer {
         display: table;
     }
 
-    .name {
-        padding: 16.5px 20px;
-    }
-
     /*Why does margin 0 auto not work here... 
     Why is all that stuff crossed out*/
     .buzz {
         width: 730px;
         margin: 0 auto;
         display: block;
-        margin-top: 30px;
+        padding-top: 120px;
     }
 
     .container-2 {
@@ -341,32 +336,26 @@ footer {
         width: 100%;
     }
 
-    header {
+    .masthead {
         width: 100%;
     }
 
-    .header {
-        width: 730px;
-    }
-    .name {
-        padding: 16.5px 20px;
-    }
-
-    .nav {
-        float: right;
-
+    .container {
+        width: 100%;
+        max-width: 725px;
     }
 
     .buzz {
-        width: 730px;
+        max-width: 725px;
+        width: 100%;
         margin: 0 auto;
         display: block;
-        margin-top: 30px;
+        padding-top: 120px;
     }
 
     .content {
         width: 100%;
-        max-width: 730px;
+        max-width: 725px;
     }
 
     .container-2 {
@@ -376,7 +365,11 @@ footer {
     }
     
     .center {
-        padding: 20px 25px;
+        max-width: 725px;
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+
     }
 
     .first-pic { 
@@ -388,7 +381,9 @@ footer {
 
     .para {
         clear: none;
+        width: 100%;
         padding: 5px 5px 0px 0px;
+        max-width: 725px;
     }
 
     .pic-a {
@@ -404,7 +399,8 @@ footer {
     }
 
     .side {
-        width: 730px;
+
+        width: 725px;
         float: left;
         height: 160px;
         margin: 0px 0px 30px 0px;
@@ -450,23 +446,24 @@ footer {
     body {
         width: 100%;
     }
-    header {
+    .masthead {
         width: 100%;
     }
 
-    .header {
-        width: 640px;
-        margin-left: 0px;
+    .container {
+        width: 100%;
+        overflow: hidden;
     }
 
-    .name {
+    #logo{
+        width: 100%;
         width: 640px;
         text-align: center;
     }
     .buzz {
         max-width: 600px;
-        float: left;
         display: inline;
+        padding-top: 120px; 
     }
     .container-2 {
         width: 100%;
@@ -483,13 +480,14 @@ footer {
 
 
     .content {
-        margin-left: 0px;
+        margin-top: 160px;
+        margin-left: 20px;
         max-width: 600px;
         width: 100%;
     }
 
     .center {
-        padding: 0px;
+    
     }
     .para {
         clear: both;
@@ -498,26 +496,9 @@ footer {
     }
 
     .nav {
-        float: left;
-        width: 220px;
-        margin: 0px 0px 0px 0px;
-        padding: 0px;
+        
     }
 
-    .nav-element {
-    display: inline;
-      
-}
-
-    .nav-link {
-        padding: none;
-        display: inline;
-        text-decoration: none;
-        padding: 4px;
-        color: #95898b;
-        background: #ffffff;
-        font-family: 'Georgia', Times, Times New Roman, serif;
-    }
 
     .side {
         width: 270px;
