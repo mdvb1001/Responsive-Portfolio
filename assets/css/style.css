@@ -309,13 +309,10 @@ footer {
         padding: 10px 10px 0px 10px;
     }
 
-    .nav {
-        float: right;
-
-    }
 
     .side {
-        width: 270px;
+        width: auto;
+        max-width: none;
         float: right;
         height: 160px;
         margin: 0px 0px 30px 0px;
@@ -339,42 +336,58 @@ footer {
 
 @media screen and (max-width: 768px) {
     body {
-        width: 100%;
+        width: auto;
     }
 
     .masthead {
-        width: 100%;
+        width: auto;
+        max-width: none;
+
     }
 
     .container {
-        width: 100%;
-        max-width: 725px;
+        width: auto;
+        max-width: none;
+    }
+    
+
+    #logo {
+        width: auto;
+        max-width: none;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    nav {
+        max-width: none;
+        width: auto;
     }
 
     .buzz {
-        max-width: 725px;
-        width: 100%;
+        max-width: none;
+        width: auto;
         margin: 0 auto;
         display: block;
         padding-top: 120px;
     }
 
     .content {
-        width: 100%;
-        max-width: 725px;
+        width: auto;
+        max-width: none;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .container-2 {
-        width: 100%;
-        max-width: 690px;
+        width: auto;
+        max-width: none;
         margin-left: 20px;
+        margin-right: 20px;
     }
     
     .center {
-        max-width: 690px;
-        padding: 20px 20px;
-        width: 100%;
-        margin: 0px;
+        max-width: none;
+        width: auto;
     }
     
     .first-pic { 
@@ -391,176 +404,32 @@ footer {
         max-width: 725px;
     }
 
-    .side-title {
-    font-weight: bold;
-    width: 685px;
-    border-bottom: 1px solid #cecece;
-    font-family:'Georgia', Times, Times New Roman, serif;
-    margin-bottom: 0px;
-    margin-top: 20px;
-    margin-left: 25px;
-    padding-bottom: 18px;
-    color: #4aaaa5;
-    text-align: left;
-    }
-
-    .pic-a {
-        width: 315px;
-        overflow: auto;
-        position: relative;
-        float: left;
-        margin: 25px;
-    }
-
-    .pic-a h3 {
-        width: 315px;
-    }
-
     .side {
 
-        width: 725px;
-        float: left;
-        height: 160px;
-        margin: 0px 0px 30px 0px;
-    }
-
-    .all-icons {
-    margin-left: 22px;
-    }
-    .icon {
-    width: 62px;
-    height: 62px;
-    margin: 20px 5px 0px 0px; 
-    padding: 0px;
-    float: left;
-    }
-
-    .special {
-    height: 55.25px;
-    width: 55.25px;
-    float: left;
-    padding-top: 23.5px;
-    margin-left: 2.25px;
-    }    
-
-    textarea {
-        width: 100%;
-        max-width: 680px;
-    }
-
-@media screen and (max-width: 640px) {
-    body {
-        width: 100%;
-    }
-    .masthead {
-        width: 100%;
-    }
-
-    .container {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    #logo{
-        width: 100%;
-        width: 640px;
-        text-align: center;
-    }
-
-    nav {
-    margin: 0;
-    display: inline;
-    max-height: 63px;
-    width: 100%;
-    max-width: 640px;
-    display: inline-block;
-    }
-
-    nav a {
-    color: #999;
-    text-decoration: none;
-    margin-left: 0px;
-    border-left: 1px solid #efefef;
-    line-height: 18px;
-    margin-top: 22.5px;
-    margin-bottom: 22.5px;
-    padding-left: 60px;
-    padding-right: 60px;
-
-    }
-
-    nav a:first-child {
-    border-left: 0 none;
-    margin: 22.5px 20px 22.5px 40px;
-    }
-
-    .buzz {
-        max-width: 600px;
-        width: 100%;
-        display: inline;
-        padding-top: 120px; 
-    }
-    .container-2 {
-        width: 100%;
-        max-width: 560px;
-        margin-left: 25px;
-    }
-
-    .first-pic { 
-        width: 550px;
-        height: auto;
-        padding-bottom: 10px;
-        margin-left: 5px;
-    }
-
-
-    .content {
-        margin-top: 180px;
-        margin-left: 20px;
-        max-width: 600px;
-        width: 100%;
-    }
-
-    .center {
-        width: 100%;
-        max-width: 550px;
-    
-    }
-    .para {
-        clear: both;
+        width: 94%;
+        max-width: none;
         float: none;
-        padding: 0px 5px 5px 5px;
-        width: 100%;
-    }
-
-    .side {
-
-        width: 600px;
-        float: left;
         height: 160px;
         margin: 0px 0px 30px 20px;
     }
 
     .side-title {
         font-weight: bold;
-        width: 555px;
+        width: auto;
+        max-width: none;
         border-bottom: 1px solid #cecece;
         font-family:'Georgia', Times, Times New Roman, serif;
         margin-bottom: 0px;
         margin-top: 20px;
-        margin-left: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
         padding-bottom: 18px;
         color: #4aaaa5;
         text-align: left;
     }
 
     .pic-a {
-        display: block;
-        margin: 0px 32px 30px 32px;
-    }
-
-    .pic-a {
-        width: 540px;
+        width: 315px;
         overflow: auto;
         position: relative;
         float: left;
@@ -568,7 +437,207 @@ footer {
     }
 
     .pic-a h3 {
-        width: 540px;
+        width: 315px;
+    }
+
+
+    .all-icons {
+        margin-left: 22px;
+    }
+    .icon {
+        width: 62px;
+        height: 62px;
+        margin: 20px 5px 0px 0px; 
+        padding: 0px;
+        float: left;
+    }
+
+    .special {
+        height: 55.25px;
+        width: 55.25px;
+        float: left;
+        padding-top: 23.5px;
+        margin-left: 2.25px;
+    }    
+
+    textarea {
+        width: 100%;
+        max-width: none;
+    }
+
+@media screen and (max-width: 640px) {
+    body {
+        width: auto;
+    }
+    .masthead {
+        width: auto;
+        max-width: none;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        overflow: hidden;    
+    }
+
+    #logo{
+        width: 640px;
+        max-width: none;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .clearfix:after {
+        clear: both;
+        content: " ";
+        display: table;
+    }
+
+
+    nav {
+        margin: 0;
+        max-height: 63px;
+        width: auto;
+        max-width: none;
+        display: inline;
+        clear: both;
+        float: none;
+        overflow: hidden;
+    }
+
+
+    .a {
+        color: #999;
+        text-decoration: none;
+        border-left: 1px solid #efefef;
+        line-height: 18px;
+        margin-top: 22.5px;
+        margin-bottom: 22.5px;
+        padding-left: 70px;
+        margin-right: 70px;
+        width: auto;
+    }
+
+    .b {
+        color: #999;
+        text-decoration: none;
+        margin-left: 0px;
+        border-left: 1px solid #efefef;
+        line-height: 18px;
+        margin-top: 22.5px;
+        margin-bottom: 22.5px;
+        padding-left: 70px;
+        margin-right: 60px;
+        width: auto;
+    }
+
+    nav a:first-child {
+        border-left: 0 none;
+        margin: 22.5px 70px 22.5px 70px;
+    }
+
+    .buzz {
+        max-width: none;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+        padding-top: 0px;
+    }
+
+    .content {
+        margin-top: 180px;
+        width: auto;
+        max-width: none;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container-2 {
+        width: auto;
+        max-width: none;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     
+    .center {
+        max-width: none;
+        width: auto;
+    }
+    
+    .first-pic { 
+        width: 300px;
+        height: auto;
+        padding: 0px 25px 0px 0px;
+        margin: 10px 0px 0px 0px;
+    }
+    
+    .para {
+        clear: none;
+        width: 100%;
+        padding: 5px 5px 0px 0px;
+        max-width: 725px;
+    }
+
+    .side {
+
+        width: 93%;
+        max-width: none;
+        float: none;
+        height: 160px;
+        margin: 0px 70px 30px 20px;
+    }
+
+    .side-title {
+        font-weight: bold;
+        width: auto;
+        max-width: none;
+        border-bottom: 1px solid #cecece;
+        font-family:'Georgia', Times, Times New Roman, serif;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 18px;
+        color: #4aaaa5;
+        text-align: left;
+    }
+
+    .pic-a {
+        width: auto;
+        max-width: none;
+        overflow: auto;
+        position: relative;
+        float: left;
+        margin: 25px;
+    }
+
+    .pic-a h3 {
+        width: 100%;
+        max-width: none;   
+    }
+
+
+    .all-icons {
+        margin-left: 22px;
+    }
+    .icon {
+        width: 62px;
+        height: 62px;
+        margin: 20px 5px 0px 0px; 
+        padding: 0px;
+        float: left;
+    }
+
+    .special {
+        height: 55.25px;
+        width: 55.25px;
+        float: left;
+        padding-top: 23.5px;
+        margin-left: 2.25px;
+    }    
+
+    textarea {
+        width: 100%;
+        max-width: none;
     }
 }
